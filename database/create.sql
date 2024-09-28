@@ -1,16 +1,15 @@
 CREATE TABLE clientes(
     cod_cliente INT PRIMARY KEY AUTO_INCREMENT,
     nome_cliente VARCHAR(20),
-    sobrenome_cliente VARCHAR(30),
     telefone_cliente VARCHAR(15),
-    municipio_cliente VARCHAR(20),
+    endereco_cliente VARCHAR(20),
     cod_tipo_cliente INT, -- Foreign key referindo-se a tipo_cliente
     CONSTRAINT fk_tipo_cliente FOREIGN KEY (cod_tipo_cliente) REFERENCES tipo_cliente(cod_tipo_cliente)
 );
 
 CREATE TABLE tipo_cliente(
     cod_tipo_cliente INT PRIMARY KEY AUTO_INCREMENT,
-    tipo_cliente VARCHAR(30) UNIQUE   
+    tipo_cliente VARCHAR(30) UNIQUE
 );
 
 CREATE TABLE produtos(
