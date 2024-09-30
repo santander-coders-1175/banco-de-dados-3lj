@@ -9,7 +9,7 @@ O objetivo principal foi desenvolver e manipular um banco de dados relacional, f
 ### Estrutura do Projeto
 
 O projeto está organizado da seguinte maneira:
-
+```
 .
 ├── data
 │   └── clientes_genericos.csv
@@ -25,6 +25,7 @@ O projeto está organizado da seguinte maneira:
 ├── modelo_logico.jpeg
 ├── README.md
 └── requirements.txt
+```
 
 data/: Contém o arquivo clientes_genericos.csv usado para populações de tabelas com dados fictícios de clientes.
 database/: Contém os arquivos SQL:
